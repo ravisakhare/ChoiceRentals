@@ -1,0 +1,3 @@
+Hi ${userName} | Congratulations !!
+You have been Successfully Registered with RentValley. 
+Please <a href="http://${host}/activation.htm?userId=${systemUserNo}&activationCode=${activationCode}"> Click here </a> to activate the profile

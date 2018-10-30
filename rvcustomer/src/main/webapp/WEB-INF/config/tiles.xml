@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="rentvalley.common.template" template="/WEB-INF/templates/rvcustomer-baselayout.jsp">
+		<put-attribute name="header" value="/WEB-INF/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/common/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="rentvalley.common.template">
+		<put-attribute name="title" value="rentvalley | Home" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+	<definition name="login" extends="rentvalley.common.template">
+		<put-attribute name="title" value="rentvelley login"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp"/>
+	</definition>
+	<definition name="customer-dashboard" extends="rentvalley.common.template">
+		<put-attribute name="title" value="rentee dashboard"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/customer-dashboard.jsp"/>
+	</definition>
+	<definition name="customer-register" extends="rentvalley.common.template">
+		<put-attribute name="title" value="customer registration"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/customer-register.jsp"/>
+	</definition>
+	<definition name="registration-success" extends="rentvalley.common.template">
+		<put-attribute name="title" value="registration success" />
+		<put-attribute name="body" value="/WEB-INF/jsp/registration-success.jsp" />
+	</definition>
+	<definition name="activation-success" extends="rentvalley.common.template">
+		<put-attribute name="title" value="activation success" />
+		<put-attribute name="body" value="/WEB-INF/jsp/activation-success.jsp" />
+	</definition>
+	<definition name="activation-failure" extends="rentvalley.common.template">
+		<put-attribute name="title" value="activation failure" />
+		<put-attribute name="body" value="/WEB-INF/jsp/activation-failure.jsp" />
+	</definition>
+	<definition name="furniture-products" extends="rentvalley.common.template">
+		<put-attribute name="title" value="furniture products" />
+		<put-attribute name="body" value="/WEB-INF/jsp/furniture-products.jsp" />
+	</definition>
+	<definition name="vehicle-products" extends="rentvalley.common.template">
+		<put-attribute name="title" value="type of vehicles" />
+		<put-attribute name="body" value="/WEB-INF/jsp/vehicle-products.jsp" />
+	</definition>
+</tiles-definitions>
